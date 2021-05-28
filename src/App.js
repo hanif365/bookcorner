@@ -10,17 +10,37 @@ import {
 import About from './components/About/About';
 import Books from './components/Books/Books';
 import Contact from './components/Contact/Contact';
+import LogIn from './components/LogIn/LogIn';
 
 export const UserContext = createContext();
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
   return (
-    <div>
-      <Home></Home>
-      <h1>Developer 1 test3</h1>
-      <h2>Developer 3 test1</h2>
-    </div>
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route path="/home">
+            <Home></Home>
+          </Route>
+          <Route path="/about">
+            <About></About>
+          </Route>
+          <Route path="/books">
+            <Books></Books>
+          </Route>
+          <Route path="/contact">
+            <Contact></Contact>
+          </Route>
+          <Route path="/login">
+            <LogIn></LogIn>
+          </Route>
+        </Switch>
+      </Router>
+    </UserContext.Provider>
   );
 }
 
