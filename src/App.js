@@ -7,6 +7,7 @@ function App() {
     <div>
       <Home></Home>
       <h1>Developer 1 test3</h1>
+      <h2>Developer 3 test1</h2>
     </div>
   );
 }
