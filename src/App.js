@@ -10,6 +10,7 @@ import {
 import About from './components/About/About';
 import Books from './components/Books/Books';
 import Contact from './components/Contact/Contact';
+import LogIn from './components/LogIn/LogIn';
 
 export const UserContext = createContext();
 
@@ -35,7 +36,7 @@ function App() {
             <Contact></Contact>
           </Route>
           <Route path="/login">
-
+            <LogIn></LogIn>
           </Route>
         </Switch>
       </Router>
