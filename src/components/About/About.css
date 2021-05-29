@@ -9,7 +9,7 @@
 }
 .aboutBody {
     /* background-image: url('https://i.ibb.co/9gWTwg3/rafael-m-CTNHIGI2-Wc-U-unsplash.jpg'); */
-    background_color: rgb(197, 217, 224);
+    background-color: rgb(197, 217, 224);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,5 +41,5 @@ p {
 /* New code added */
 
 .about-container{
-    margin-top: 150px;
+    padding-top: 150px;
 }
