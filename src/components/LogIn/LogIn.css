@@ -1,0 +1,44 @@
+.google-signIn-btn {
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid #4285f4;
+  color: #34a853;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 150px 0 0 0;
+}
+
+.google-signIn-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.google-signIn-btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.google-signIn-btn:hover span {
+  padding-right: 25px;
+}
+
+.google-signIn-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.google-signIn-btn img {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+}
