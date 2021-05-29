@@ -8,7 +8,7 @@ const Books = () => {
         URL = `http://private-anon-f2ea18dd7c-bookstore.apiary-mock.com/data/books`;
         fetch(URL)
         .then(res => res.json())
-        .then(data => setBooksData(data));
+        .then(data => console.log(data[[0] + [1] + [2]]));
     }, [booksData]);
     return (
         <>
