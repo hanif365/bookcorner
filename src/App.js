@@ -8,10 +8,11 @@ import {
   Link
 } from "react-router-dom";
 import About from './components/About/About';
-import Books from './components/Books/Books';
+import Books from './components/AllBooks/AllBooks';
 import Contact from './components/Contact/Contact';
 import LogIn from './components/LogIn/LogIn';
 import Footer from './components/Shared/Footer/Footer';
+import Navbar from './components/Shared/Navbar/Navbar';
 
 export const UserContext = createContext();
 
@@ -20,6 +21,7 @@ function App() {
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
+        <Navbar></Navbar>
         <Switch>
           <Route exact path="/">
             <Home></Home>

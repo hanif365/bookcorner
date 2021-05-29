@@ -1,7 +1,7 @@
 import React from 'react';
-import './BookItem.css'
+import './AllBooksItems.css'
 
-const BookItem = (props) => {
+const AllBooksItems = (props) => {
     console.log(props.book);
     const { ISBN, author, image, price, summary, title } = props.book;
     return (
@@ -20,4 +20,4 @@ const BookItem = (props) => {
     );
 };
 
-export default BookItem;
+export default AllBooksItems;
