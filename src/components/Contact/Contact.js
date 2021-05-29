@@ -57,9 +57,9 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row pb-5">
-                    <h1 className="text-center color">SEND <span className="mission">YOUR</span> OPINION</h1>
-                    <p className="text-center fontSize">
+                <div className="row pb-5 pt-3">
+                    <h1 className="text-center color ">SEND <span className="mission">YOUR</span> OPINION</h1>
+                    <p className="text-center fontSize pb-3">
                         Have a question or want to any help together?
                     </p>
                     <div className="col-md-2"></div>
