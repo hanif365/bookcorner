@@ -19,3 +19,8 @@ label {
     border: 8px solid #0dcaf0 !important;
     border-radius: 15px;
 }
+
+/* New Code Added */
+.contact-container{
+    margin-top: 150px;
+}

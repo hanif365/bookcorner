@@ -3,7 +3,8 @@
 }
 
 .form-btn {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50;
+  /* Green */
   border: none;
   border-radius: 10px;
   color: white;
@@ -73,8 +74,15 @@
   opacity: 1;
   right: 0;
 }
+
 .google-signIn-btn img {
   width: 30px;
   height: 30px;
   margin-right: 30px;
+}
+
+/* New Code added */
+
+.login-container {
+  margin-top: 150px;
 }
