@@ -1,5 +1,21 @@
 .infoBox {
-    border: 1px solid red;
-    width: 180px;
-    height: 180px;
+    border: 8px solid #0dcaf0;
+    border-radius: 15px;
+}
+.infoBoxEmail {
+    border: 8px solid rgb(167, 203, 212);
+    border-radius: 15px;
+}
+.fontSize {
+    font-size: 15px;
+}
+.icon {
+    font-size: 50px;
+}
+label {
+    color: rgb(100, 118, 121);;
+}
+.emailBox {
+    border: 8px solid #0dcaf0 !important;
+    border-radius: 15px;
 }
