@@ -1,3 +1,12 @@
 .blog-card{
     width: 22rem;
+    cursor: pointer;
+}
+.blog-container{
+    opacity: 0.8;
+    transition: all 400ms ease-in;
+}
+.blog-container:hover{
+    transform: translateY(10px);
+    opacity: 1;
 }

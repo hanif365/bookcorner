@@ -5,3 +5,11 @@
 .book-card img{
     height: 250px;
 }
+.book-item-container{
+    transition: all 300ms ease-in;
+    opacity: 0.8;
+}
+.book-item-container:hover{
+    opacity: 1;
+    transform: translateY(10px);
+}

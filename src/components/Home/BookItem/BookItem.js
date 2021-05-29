@@ -5,7 +5,7 @@ const BookItem = (props) => {
     console.log(props.book);
     const { ISBN, author, image, price, summary, title } = props.book;
     return (
-        <div className="py-5">
+        <div className="py-5 book-item-container">
             <div className="card book-card">
                 <img src={image} className="card-img-top" alt="" />
                 <div className="card-body">

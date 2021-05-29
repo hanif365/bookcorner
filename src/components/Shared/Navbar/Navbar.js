@@ -7,9 +7,9 @@ import { faBook, faBookReader } from '@fortawesome/free-solid-svg-icons'
 const Navbar = () => {
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-md navbar-light fixed-top">
                 <div class="container">
-                    <Link to="/" class="navbar-brand"><FontAwesomeIcon icon={faBookReader} /> Book Corner</Link>
+                    <Link to="/" class="navbar-brand"><FontAwesomeIcon icon={faBookReader} /> BOOK CORNER</Link>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
