@@ -41,16 +41,16 @@ const LogIn = () => {
     }
 
     return (
-        <div>
+        <>
+            <Navbar />
             <div className="container">
-                <Navbar />
                 <div className="row">
                     <div className="col-md-12">
                         <button onClick={handleGoogleSignIn} className="google-signIn-btn"><img className="google-logo" src={google} alt="google-logo" /><span>Sign In With Google</span></button>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

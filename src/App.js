@@ -1,15 +1,14 @@
 import React, { createContext, useState } from 'react';
-import './App.css';
-import Home from './components/Home/Home/Home';
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+
+  Route, Switch
 } from "react-router-dom";
+import './App.css';
 import About from './components/About/About';
 import Books from './components/Books/Books';
 import Contact from './components/Contact/Contact';
+import Home from './components/Home/Home/Home';
 import LogIn from './components/LogIn/LogIn';
 
 export const UserContext = createContext();
