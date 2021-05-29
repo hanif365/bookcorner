@@ -1,14 +1,18 @@
 import firebase from "firebase/app";
 import "firebase/auth";
 import React from 'react';
+import google from '../../Images/google-logo.png';
+import Navbar from "../Shared/Navbar/Navbar";
 import firebaseConfig from './firebase.config';
 import './LogIn.css';
 
+
 const LogIn = () => {
-    if (firebase.apps.length) {
+
+    if (!firebase.apps.length) {
         firebase.initializeApp(firebaseConfig);
     } else {
-        firebase.app();
+        firebase.app(); // if already initialized, use that one
     }
 
     const handleGoogleSignIn = () => {
@@ -38,13 +42,11 @@ const LogIn = () => {
 
     return (
         <div>
-            <div className="login-container">
-                
-                <div className="container">
-                    <div className="row">
-                        <div className="col">
-                            <button onClick={handleGoogleSignIn} className="google-signIn-btn">Sign In With Google</button>
-                        </div>
+            <div className="container">
+                <Navbar />
+                <div className="row">
+                    <div className="col-md-12">
+                        <button onClick={handleGoogleSignIn} className="google-signIn-btn"><img className="google-logo" src={google} alt="google-logo" /><span>Sign In With Google</span></button>
                     </div>
                 </div>
             </div>
