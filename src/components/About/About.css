@@ -1,0 +1,39 @@
+.aboutUs {
+    color: #0dcaf0;
+}
+.mission {
+    color: #0dcaf0;
+}
+.color {
+    color: rgb(167, 203, 212);
+}
+.aboutBody {
+    /* background-image: url('https://i.ibb.co/9gWTwg3/rafael-m-CTNHIGI2-Wc-U-unsplash.jpg'); */
+    background_color: rgb(197, 217, 224);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color-burn;
+}
+.imgBox {
+    border: 5px solid #0dcaf0;
+    padding: 5px;
+    border-radius: 15px;
+}
+.imgBox img {
+    border-radius: 15px;
+}
+p {
+    font-size: 12px;
+    font-family: sans-serif;
+    color: rgb(100, 118, 121);
+}
+.teamBox:hover {
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px 5px gray;
+}
+.teamBox img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
