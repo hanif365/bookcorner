@@ -11,6 +11,7 @@ import About from './components/About/About';
 import Books from './components/Books/Books';
 import Contact from './components/Contact/Contact';
 import LogIn from './components/LogIn/LogIn';
+import Footer from './components/Shared/Footer/Footer';
 
 export const UserContext = createContext();
 
@@ -39,6 +40,7 @@ function App() {
             <LogIn></LogIn>
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </UserContext.Provider>
   );
