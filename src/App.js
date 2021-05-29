@@ -13,6 +13,7 @@ import Contact from './components/Contact/Contact';
 import LogIn from './components/LogIn/LogIn';
 import Footer from './components/Shared/Footer/Footer';
 import Navbar from './components/Shared/Navbar/Navbar';
+import AllBlogs from './components/AllBlogs/AllBlogs';
 
 export const UserContext = createContext();
 
@@ -40,6 +41,9 @@ function App() {
           </Route>
           <Route path="/login">
             <LogIn></LogIn>
+          </Route>
+          <Route path="/allBlogs">
+            <AllBlogs></AllBlogs>
           </Route>
         </Switch>
         <Footer></Footer>

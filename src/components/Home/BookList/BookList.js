@@ -23,9 +23,11 @@ const BookList = () => {
                 {
                     books.map(book => <BookItem book={book}></BookItem>)
                 }
-                
+
             </div>
-            <Link to="/books" className="btn btn-info">See More</Link>
+            <div className="text-center">
+                <Link to="/books" className="btn btn-info py-2 px-5">SEE MORE BOOKS</Link>
+            </div>
         </div>
     );
 };
