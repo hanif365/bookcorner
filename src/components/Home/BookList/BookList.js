@@ -8,7 +8,7 @@ const BookList = () => {
     const [books, setBooks] = useState([]);
 
     useEffect(() => {
-        const url = `http://private-anon-f2ea18dd7c-bookstore.apiary-mock.com/data/books`
+        const url = `https://private-anon-f2ea18dd7c-bookstore.apiary-mock.com/data/books`
         fetch(url)
             .then(res => res.json())
             .then(data => {
