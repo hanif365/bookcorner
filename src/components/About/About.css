@@ -27,6 +27,11 @@
 
 .imgBox img {
     border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.imgBox img:hover {
+    transform: scale(1.06);
 }
 
 p {
@@ -52,8 +57,16 @@ p {
     background: linear-gradient(to right, #ACB6E5, #74ebd5);
 
 }
+
+.misbah {
+    background: #2980B9;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+
+}
+
 /* New code added */
 
-.about-container{
+.about-container {
     padding-top: 150px;
 }
