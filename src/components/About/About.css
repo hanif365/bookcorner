@@ -12,7 +12,7 @@
 
 .aboutBody {
     /* background-image: url('https://i.ibb.co/9gWTwg3/rafael-m-CTNHIGI2-Wc-U-unsplash.jpg'); */
-    background_color: rgb(197, 217, 224);
+    background-color: rgb(197, 217, 224);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,4 +51,9 @@ p {
     background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);
     background: linear-gradient(to right, #ACB6E5, #74ebd5);
 
+}
+/* New code added */
+
+.about-container{
+    padding-top: 150px;
 }

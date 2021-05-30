@@ -10,7 +10,7 @@ const AllBlogs = () => {
         setAllBlogs(allBlogsData);
     }, [])
     return (
-        <div className="container py-5">
+        <div className="container all-blogs-container">
             <h1 className="text-center">ALL BLOGS</h1>
             <div className="d-flex justify-content-between flex-wrap">
                 {
