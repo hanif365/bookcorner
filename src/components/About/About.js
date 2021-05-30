@@ -57,8 +57,8 @@ const About = () => {
                     <div className="col-md-4 mb-5 pt-3">
                         <div className="text-center">
                             <div className="p-3 teamBox">
-                                <img src="https://i.ibb.co/mSBKf1F/1621415116498.jpg" className="img-fluid mb-3" alt="" />
-                                <h6>ABDUR RAHIM</h6>
+                                <img src="https://i.ibb.co/qM8Bz8C/190559096-312441237166701-7160339082037164244-n.png" className="img-fluid mb-3 misbah" alt="" />
+                                <h6>Khushbu Islam Misbah</h6>
                                 <p className = "mb-5">
                                     <small>CEO & Co-Founder</small>
                                 </p>
