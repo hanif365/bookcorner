@@ -6,7 +6,7 @@ import { faPhoneAlt, faEnvelope, faMapMarkedAlt } from '@fortawesome/free-solid-
 
 const Contact = () => {
     return (
-        <div>
+        <div className="contact-container">
             <div className="container">
                 <h1 className="text-center pb-3 pt-3 mission">GET <span className="color">IN</span> TOUCHE</h1>
                 <div className="row pt-5 pb-3">

@@ -15,7 +15,7 @@ const AllBooks = () => {
             })
     }, [])
     return (
-        <div className="container py-5">
+        <div className="container all-book-container">
         <h1 className="text-center">All BOOK LIST</h1>
         <div className="d-flex justify-content-between flex-wrap">
             {

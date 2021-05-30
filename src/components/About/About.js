@@ -3,13 +3,13 @@ import './About.css'
 
 const About = () => {
     return (
-        <div className='aboutBody'>
+        <div className='aboutBody about-container'>
             <div className="container">
                 <div className="row pb-5">
                     <h1 className="text-center pt-3 color">ABOUT <span className="aboutUs">US</span> </h1>
                     <div className="col-md-6 pt-5">
                         <div className="imgBox">
-                            <img src="https://i.ibb.co/WHKT6HY/priscilla-du-preez-Xk-KCui44i-M0-unsplash.jpg" className="img-fluid" alt="" />
+                            <img src="https://i.ibb.co/JcrN0fF/john-michael-thomson-9m1-V6-A8-Fm-A-unsplash.jpg" className="img-fluid" alt="" />
                         </div>
                     </div>
                     <div className="col-md-6 pt-5">
@@ -34,7 +34,18 @@ const About = () => {
                     </p>
                     <div className="col-md-4 mb-5 pt-3">
                         <div className="text-center">
-                            <div className="p-5 teamBox">
+                            <div className="p-3 teamBox">
+                                <img src="https://i.ibb.co/vvSsRQ9/hanif.png" className="img-fluid mb-3 hanif" alt="" />
+                                <h6>M.A. HANIF</h6>
+                                <p className = "mb-5">
+                                    <small>CEO & Co-Founder</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-4 mb-5 pt-3">
+                        <div className="text-center">
+                            <div className="p-3 teamBox">
                                 <img src="https://i.ibb.co/mSBKf1F/1621415116498.jpg" className="img-fluid mb-3" alt="" />
                                 <h6>ABDUR RAHIM</h6>
                                 <p className = "mb-5">
@@ -45,20 +56,9 @@ const About = () => {
                     </div>
                     <div className="col-md-4 mb-5 pt-3">
                         <div className="text-center">
-                            <div className="p-5 teamBox">
-                                <img src="https://i.ibb.co/mSBKf1F/1621415116498.jpg" className="img-fluid mb-3" alt="" />
-                                <h6>ABDUR RAHIM</h6>
-                                <p className = "mb-5">
-                                    <small>CEO & Co-Founder</small>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-4 mb-5 pt-3">
-                        <div className="text-center">
-                            <div className="p-5 teamBox">
-                                <img src="https://i.ibb.co/mSBKf1F/1621415116498.jpg" className="img-fluid mb-3" alt="" />
-                                <h6>ABDUR RAHIM</h6>
+                            <div className="p-3 teamBox">
+                                <img src="https://i.ibb.co/qM8Bz8C/190559096-312441237166701-7160339082037164244-n.png" className="img-fluid mb-3 misbah" alt="" />
+                                <h6>Khushbu Islam Misbah</h6>
                                 <p className = "mb-5">
                                     <small>CEO & Co-Founder</small>
                                 </p>

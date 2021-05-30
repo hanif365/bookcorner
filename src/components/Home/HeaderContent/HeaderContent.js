@@ -17,22 +17,22 @@ const HeaderContent = () => {
                     <div className="carousel-item active">
                         <img src={slider1} className="d-block w-100 img-fluid" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+                            <h2>Read Book, Refresh Your Mind</h2>
+                            <h5>We Collect World famous book which refresh your mind</h5>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img src={slider2} className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
+                            <h2>We Provide 24/7 Service</h2>
+                            <h5>We Provide 24/7 service with reliable</h5>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img src={slider3} className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
+                            <h2>Online Book Order from anywhere of World</h2>
+                            <h5>You can order your favorite book anywhere of the world anytime</h5>
                         </div>
                     </div>
                 </div>

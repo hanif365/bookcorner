@@ -17,7 +17,7 @@ const BookList = () => {
             })
     }, [])
     return (
-        <div className="book-list-container">
+        <div className="book-list-container mb-5">
             <div className="container py-5">
                 <h1 className="text-center">BOOK LIST</h1>
                 <div className="d-flex justify-content-between flex-wrap">
