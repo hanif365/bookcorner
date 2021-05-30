@@ -6,7 +6,7 @@ const Blog = (props) => {
 
     const {id, title, description, image, time} = props.blog;
     return (
-        <div className="py-5 blog-container">
+        <div className="blog-container">
             <div class="card blog-card">
                 <img src={image} class="card-img-top" alt="..." />
                 <div class="card-body">

@@ -17,16 +17,16 @@ const BookList = () => {
             })
     }, [])
     return (
-        <div className="book-list-container mb-5">
-            <div className="container py-5">
-                <h1 className="text-center">BOOK LIST</h1>
+        <div className="book-list-container py-5">
+            <div className="container ">
+                <h1 className="text-center pb-5">BOOK LIST</h1>
                 <div className="d-flex justify-content-between flex-wrap">
                     {
                         books.map(book => <BookItem book={book}></BookItem>)
                     }
 
                 </div>
-                <div className="text-center">
+                <div className="text-center py-5">
                     <Link to="/books" className="btn btn-info py-2 px-5">SEE MORE BOOKS</Link>
                 </div>
             </div>

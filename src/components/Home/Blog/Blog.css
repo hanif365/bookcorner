@@ -5,6 +5,7 @@
 .blog-container{
     opacity: 0.8;
     transition: all 400ms ease-in;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.555);
 }
 .blog-container:hover{
     transform: translateY(10px);

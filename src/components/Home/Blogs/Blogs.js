@@ -12,10 +12,10 @@ const Blogs = () => {
         setBlogs(firstThreeBlogData);
     }, [])
     return (
-        <div className="blogs-container">
+        <div className="blogs-container pt-5">
             <div className="container py-5">
                 <h1 className="text-center">OUR BLOG</h1>
-                <div className="d-flex justify-content-between flex-wrap">
+                <div className="d-flex justify-content-between flex-wrap py-5">
                     {
                         blogs.map(blog => <Blog key={blog.id} blog={blog}></Blog>)
                     }

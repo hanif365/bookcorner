@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBook, faBookReader } from '@fortawesome/free-solid-svg-icons'
+import { UserContext } from '../../../App';
 
 const Navbar = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     return (
         <div>
             <nav class="navbar navbar-expand-md navbar-light fixed-top">
@@ -21,6 +23,7 @@ const Navbar = () => {
                             <Link to="/allBlogs" class="nav-link">BLOGS</Link>
                             <Link to="/contact" class="nav-link">CONTACT US</Link>
                             <Link to="/login" class="nav-link">LOGIN</Link>
+
                         </div>
                     </div>
                 </div>
