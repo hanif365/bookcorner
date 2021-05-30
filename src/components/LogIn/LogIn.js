@@ -1,11 +1,21 @@
 import firebase from "firebase/app";
 import "firebase/auth";
-import React from 'react';
+import React, { useContext, useState } from 'react';
+import { UserContext } from "../../App";
 import google from '../../Images/google-logo.png';
 import firebaseConfig from './firebase.config.js';
 import './LogIn.css';
 
 const LogIn = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    const [user, setUser] = useState({
+        isSignedIn: false,
+        newUser: false,
+        name: '',
+        email: '',
+        password: '',
+        photo: ''
+      });
 
     if (!firebase.apps.length) {
         firebase.initializeApp(firebaseConfig);
@@ -17,12 +27,26 @@ const LogIn = () => {
         var provider = new firebase.auth.GoogleAuthProvider();
         firebase.auth()
             .signInWithPopup(provider)
-            .then((result) => {
-                console.log(result.user);
-            }).catch((error) => {
-                console.log(error.code);
-                console.log(error.message);
-            });
+            .then(res => {
+                // console.log(res);
+                const { displayName, photoURL, email } = res.user;
+                const signedInUser = {
+                  isSignedIn: true,
+                  name: displayName,
+                  email: email,
+                  photo: photoURL
+                }
+                setLoggedInUser(signedInUser)
+                console.log(displayName, photoURL, email);
+              })
+              .catch(error => {
+                console.log(error)
+                console.log(error.message)
+              })
+    }
+
+    const handleGoogleSignOut = () => {
+        
     }
 
     return (
@@ -45,7 +69,10 @@ const LogIn = () => {
                             <button type="submit" className="form-btn btn-style">SUBMIT</button>
                         </div>
                         <div className="col-md-12">
-                            <button onClick={handleGoogleSignIn} className="google-signIn-btn"><img className="google-logo" src={google} alt="google-logo" /><span>Sign In With Google</span></button>
+                            {
+                                loggedInUser.email ? <button onClick={handleGoogleSignOut} className="google-signIn-btn"><img className="google-logo" src={google} alt="google-logo" /><span>Sign Out</span></button> :
+                                <button onClick={handleGoogleSignIn} className="google-signIn-btn"><img className="google-logo" src={google} alt="google-logo" /><span>Sign In</span></button>
+                            }
                         </div>
                     </div>
                 </div>

@@ -1,12 +1,13 @@
+import { faBookReader } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBook, faBookReader } from '@fortawesome/free-solid-svg-icons'
 import { UserContext } from '../../../App';
+import './Navbar.css';
 
 const Navbar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+
     return (
         <div>
             <nav class="navbar navbar-expand-md navbar-light fixed-top">
@@ -22,8 +23,15 @@ const Navbar = () => {
                             <Link to="/books" class="nav-link">BOOKS</Link>
                             <Link to="/allBlogs" class="nav-link">BLOGS</Link>
                             <Link to="/contact" class="nav-link">CONTACT US</Link>
-                            <Link to="/login" class="nav-link">LOGIN</Link>
-
+                            {/* <Link to="/login" class="nav-link">LOGIN</Link> */}
+                            {
+                                loggedInUser.email ? <Link class="nav-link">{loggedInUser.name}</Link> :
+                                    <Link to="/login" class="nav-link">LOG IN</Link>
+                            }
+                            {/* logout */}
+                            {
+                                loggedInUser.email ? <Link onClick={() => setLoggedInUser({})} class="nav-link">LOG Out</Link> : ''
+                            }
                         </div>
                     </div>
                 </div>
